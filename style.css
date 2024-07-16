@@ -1,0 +1,101 @@
+@charset "UTF-8";
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ @font-face {
+    font-family: 'cordel';
+    src: url('fonts/EldesCordel-Demo.otf') format('opentype'), url('fonts/Magston\ Cordeli.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+html,body{
+    min-height: 100vh;
+    background-color: rgba(169, 169, 169, 0.226);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'cordel';
+    font-size: 30px;
+}
+header >h1{
+    padding: 50px;
+    font-variant: small-caps;
+}
+header >p{
+    padding-bottom: 50px;
+    }
+
+ header a, footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+section{
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    line-height: 2em;
+    padding-left: 50px;
+    font-family:"Playwrite HU", cursive;
+    font-size: 21px;
+}
+
+section >p{
+    padding-bottom: 5em;
+}
+
+section.normal{
+    background-color: rgb(255, 255, 255);
+    color: rgba(14, 13, 13, 0.959);
+}
+
+section.imagem{
+    background-color: rgba(32, 29, 29, 0.808);
+    color: whitesmoke;
+    box-shadow: 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: right;
+    text-shadow: 1 px 1px 0px black;
+   
+}
+
+section#img01{
+background-image: url('asserts/background001.jpg');
+background-position: center right;
+
+}
+
+section#img02{
+background-image: url('asserts/background002.jpg');
+
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-family: 'cordel';
+    font-weight: lighter;
+    font-size: 25px;
+  
+}
+
